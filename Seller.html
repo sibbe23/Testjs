@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seller</title>
 </head>
-<body>
-    <div style="text-align: center;">
+<body style="background-color: rgb(11, 64, 70);" background="bg (2).jpg">
+    <div style="text-align:center;background-color: rgb(255, 255, 255); margin-top: 5%;margin-left: 2%;margin-right: 2%;padding-top: 1%;" class="rounded border border-dark">
         <form action = "#" onsubmit="myfunction(event)">
             <ul>
-        <label>Selling Price</label>
+        <label >Selling Price</label>
         <input type="text" id="amount" name="amount">
-        <label>Product Name</label>
+        <label >Product Name</label>
         <input type="text" id="name" name="name">
-        <label>Choose a Category</label>
+        <label >Choose a Category</label>
         <select id = "items" name="items">
-            <option value ="Electronics" id="electronics">Electronics</option>
-                <option value ="Food" id="food">Food</option>
-                <option value ="Skincare" id="skincare">Skincare</option>
+            <option id="electronics" style="font-style: italic;" value ="Electronics" class="font-italic">Electronics</option>
+                <option value ="Food" id="food" style="font-style: italic;">Food</option>
+                <option value ="Skincare" id="skincare" style="font-style: italic;">Skincare</option>
         </select>
-        <input type ="submit" value="Add Products">
+        <input type ="submit" value="Add Products" class="btn btn-primary btn-sm">
         </ul>
     </form>
     </div>
-    <div>
-        <ul id="item1" value="item1" name="item1"><h1>Electronics Items list</h1></ul>
-        <ul id="item2" value="item2" name="item2"><h1>Food Items list</h1></ul>
-        <ul id="item3" value="item3" name="item3"><h1>Skincare Items list</h1></ul>
+    <div class="card border-dark-subtle mb-3" style="margin-top: 1%;margin-left: 1%; margin-right: 1%;padding-top: 1%; ">
+        <ul  id="item1" value="item1" name="item1";><h1 class="card-title">Electronics Items list</h1></ul>
+        <ul  id="item2" value="item2" name="item2"><h1 class="card-title">Food Items list</h1></ul>
+        <ul  id="item3" value="item3" name="item3"><h1 class="card-title" >Skincare Items list</h1></ul>
         
     </div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
