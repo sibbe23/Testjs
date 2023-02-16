@@ -89,7 +89,7 @@
 const path = require('path')
 
 const express = require('express')
-
+const successController = require('../Nodejs/controllers/success')
 const bodyParser = require('body-parser')
 const app = express();
 
@@ -107,9 +107,7 @@ app.use('/admin',adminRoutes)
 app.use(shopRoutes)
 app.use(contactusRoutes)
 
-app.use((req,res,next)=>{
-    res.sendFile(path.join(__dirname,'views','success.html'))
-})
+app.use(successController.successPage)
 
 app.use((req,res,next)=>{
     res.status(404).sendFile(path.join(__dirname,'views','404.html'))
